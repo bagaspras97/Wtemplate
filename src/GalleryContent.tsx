@@ -1,5 +1,17 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import usImage from "./assets/us.jpeg";
+import image16 from "./assets/16.webp";
+import image6 from "./assets/6.jpeg";
+import image7 from "./assets/7.jpeg";
+import image8 from "./assets/8.jpeg";
+import image9 from "./assets/9.jpeg";
+import image10 from "./assets/10.jpeg";
+import image11 from "./assets/11.jpeg";
+import image12 from "./assets/12.jpeg";
+import image13 from "./assets/13.jpeg";
+import image14 from "./assets/14.jpeg";
+import image15 from "./assets/15.jpeg";
 
 interface GalleryContentProps {
   onImageViewerChange?: (isOpen: boolean) => void;
@@ -9,90 +21,90 @@ interface GalleryContentProps {
 const galleryImages = [
   {
     id: 1,
-    src: "/src/assets/us.jpeg",
+    src: usImage,
     alt: "Our sweet moment",
     category: "couple",
     title: "Sweet Memories"
   },
   {
     id: 2,
-    src: "/src/assets/16.webp", 
+    src: image16,
     alt: "Romantic moment",
     category: "couple",
     title: "Love Story"
   },
   {
     id: 3,
-    src: "/src/assets/6.jpeg",
+    src: image6,
     alt: "Together forever",
     category: "couple", 
     title: "Forever Together"
   },
-  // Placeholder images for demonstration
   {
     id: 4,
-    src: "/src/assets/7.jpeg",
+    src: image7,
     alt: "Engagement photos",
     category: "engagement",
     title: "Engagement Day"
   },
   {
     id: 5,
-    src: "/src/assets/8.jpeg",
+    src: image8,
     alt: "Pre-wedding shoot",
     category: "prewedding",
     title: "Pre-Wedding Session"
   },
   {
     id: 6,
-    src: "/src/assets/9.jpeg",
+    src: image9,
     alt: "Family photos",
     category: "family",
     title: "With Family"
   },
   {
     id: 7,
-    src: "/src/assets/10.jpeg",
+    src: image10,
     alt: "With friends",
     category: "friends",
     title: "Best Friends"
   },
   {
     id: 8,
-    src: "/src/assets/11.jpeg",
+    src: image11,
     alt: "Our journey",
     category: "journey",
     title: "Our Journey"
   },
   {
     id: 9,
-    src: "/src/assets/12.jpeg",
+    src: image12,
     alt: "Romantic engagement",
     category: "engagement",
     title: "Romantic Engagement"
   },
   {
     id: 10,
-    src: "/src/assets/13.jpeg",
+    src: image13,
     alt: "Pre-wedding bliss",
     category: "prewedding",
     title: "Pre-Wedding Bliss"
   },
   {
     id: 11,
-    src: "/src/assets/14.jpeg",
+    src: image14,
     alt: "Love celebration",
     category: "couple",
     title: "Love Celebration"
   },
   {
     id: 12,
-    src: "/src/assets/15.jpeg",
+    src: image15,
     alt: "Family gathering",
     category: "family",
     title: "Family Gathering"
   }
 ];
+
 
 const categories = [
   { id: "all", name: "All Photos", emoji: "📷" },
